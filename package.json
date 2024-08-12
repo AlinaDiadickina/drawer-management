@@ -1,0 +1,25 @@
+{
+  "name": "drawer-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlinaDiadickina/drawer-management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlinaDiadickina/drawer-management/issues"
+  },
+  "homepage": "https://github.com/AlinaDiadickina/drawer-management#readme",
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "docker-compose": "0.24.8",
+    "express": "4.19.2",
+    "jsonwebtoken": "9.0.2",
+    "mongoose": "8.5.2",
+    "nodemon": "3.1.4"
+  }
+}
