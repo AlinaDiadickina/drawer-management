@@ -85,11 +85,6 @@ ID should look like this:
 
 Will return "TO GET" list items and mark if you have them in your drawer.
 To input ID please refer to the ID field in the Path Variables.
-ID should look like this:
-
-```bash
-66ba4304b0121af47a632d0a
-```
 
 #### PUT update existing items
 
@@ -104,11 +99,6 @@ Edits exisitng item name, quantity and description.
 ```
 
 To input ID please refer to the ID field in the Path Variables.
-ID should look like this:
-
-```bash
-66ba4304b0121af47a632d0a
-```
 
 #### POST add item to TO GET list
 
@@ -137,30 +127,15 @@ Adds items to your drawer.
 By specifying the item ID, you can increase its quantity.
 To input ID please refer to the ID field in the Path Variables.
 ID should look like this:
-
-```bash
-66ba4304b0121af47a632d0a
-```
-
 #### PATCH decrease item quantity
 
 By specifying the item ID, you can decrease its quantity. If quantity reaches 0 - the item is removed from the drawer.
 To input ID please refer to the ID field in the Path Variables.
-ID should look like this:
-
-```bash
-66ba4304b0121af47a632d0a
-```
 
 #### DEL remove item
 
 Specify the item ID you want to remove and it will be removed from the drawer.
 To input ID please refer to the ID field in the Path Variables.
-ID should look like this:
-
-```bash
-66ba4304b0121af47a632d0a
-```
 
 
 Note: All relevant outputs will show you item IDs and your drawer ID. You can use those for GET methods.
