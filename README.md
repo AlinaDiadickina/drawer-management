@@ -15,7 +15,7 @@ This management system alows users to register and login to manage their drawer 
 ### Instalation
 To install all relevant packages please run:
 ```bash
-npm instal
+npm install
 ```
 
 To start the aplication run docker:
