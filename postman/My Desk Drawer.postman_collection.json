@@ -1,0 +1,415 @@
+{
+	"info": {
+		"_postman_id": "1419c562-01dc-4140-8958-07b984b07f9d",
+		"name": "My Desk Drawer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35166133"
+	},
+	"item": [
+		{
+			"name": "Drawer",
+			"item": [
+				{
+					"name": "Get all user drawer items",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pencil\",\r\n    \"quantity\": 3,\r\n    \"description\": \"A simple number 2 pencil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/drawer/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"drawer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Drawer Items by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/drawer/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"drawer",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "66ba36fc451346b68dbcec0e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Compare TO GET list with drawe items",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/drawer/:id/to-get/check",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"drawer",
+								":id",
+								"to-get",
+								"check"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "66ba36fc451346b68dbcec0e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update existing item",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"napkin\",\r\n    \"quantity\": 1,\r\n    \"description\": \"A simple napkin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/drawer/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"drawer",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "66ba3702451346b68dbcec14"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add item to TO GET list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"items\": [\"paste\", \"pen\"]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/drawer/to-get",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"drawer",
+								"to-get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add item to drawer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pencil\",\r\n    \"quantity\": 4,\r\n    \"description\": \"A standard pencil\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/drawer/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"drawer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Increase item quantity",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/drawer/:id/increase",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"drawer",
+								":id",
+								"increase"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "66ba430ab0121af47a632d0e"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Decrease item quantity",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/drawer/:id/decrease",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"drawer",
+								":id",
+								"decrease"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "66ba36fc451346b68dbcec0f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove item",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/drawer/:id",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"drawer",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "66ba370c451346b68dbcec1a"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"packages": {},
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"newuser\",\r\n  \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/auth/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"username\": \"newuser\",\r\n  \"password\": \"password123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/auth/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YmE0MmVhYjAxMjFhZjQ3YTYzMmQwNiIsImlhdCI6MTcyMzQ4Mjg1OCwiZXhwIjoxNzIzNDg2NDU4fQ.Lyh-kP9yefur1o3cylgyVgs3l3DiPkW0tmXkvVtfVzU",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
