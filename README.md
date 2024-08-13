@@ -34,7 +34,9 @@ cd postman
 ```
 
 Import the file located in that directory into Postman. You will now have your working environment all set up. 
+
 Note: docker must be deployed in the previous step.
+Your view should resemble this:
 
 
 
