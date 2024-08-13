@@ -37,7 +37,7 @@ Import the file located in that directory into Postman. You will now have your w
 Note: docker must be deployed in the previous step.
 
 Your view should be this:
-[example.png](../postman/example.png)
+![Postman view example](/postman/example.png?raw=true) <br />
 
 ### 2: Setting up the Drawer management
 
