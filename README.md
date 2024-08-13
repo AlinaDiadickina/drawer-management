@@ -36,8 +36,11 @@ cd postman
 Import the file located in that directory into Postman. You will now have your working environment all set up. 
 Note: docker must be deployed in the previous step.
 
-Your view should be this:
+
+
 ![Postman view example](/postman/example.png?raw=true) <br />
+
+
 
 ### 2: Setting up the Drawer management
 
